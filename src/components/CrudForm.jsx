@@ -53,7 +53,7 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
             <h3>{dataToEdit ? "Editar" : "Agregar"}</h3>
             <form onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder="Nombre" onChange={handleChange} value={form.name} />
-                <input type="text" name="constellation" placeholder="constellation"
+                <input type="text" name="constellation" placeholder="Lastname"
                     onChange={handleChange} value={form.constellation}
                 />
                 <input type="submit" value="Enviar" />

@@ -30,12 +30,7 @@ const CrudApp = () => {
     const createData = async (data) => {
         data.id = Date.now();
 
-        let options = {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-            data: JSON.stringify(data)
-        };
-        await axios("http://localhost:5000/santos", options)
+        await axios.post("http://localhost:5000/santos",data)
 
         getData()
     };
