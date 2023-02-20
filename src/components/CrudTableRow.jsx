@@ -14,7 +14,7 @@ const CrudTableRow = ({ caballero, setDataToEdit, deleteData }) => {
             <td>{constellation}</td>
             <td>
                 <button onClick={() => setDataToEdit(caballero)}>Editar</button>
-                <button onClick={() => deleteData(id)}>Eliminar</button>
+                <button onClick={() => deleteData(id,name)}>Eliminar</button>
             </td>
         </tr>
 

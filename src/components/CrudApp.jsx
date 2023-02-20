@@ -13,10 +13,12 @@ const CrudApp = () => {
 
 
     const getData = async () => {
-        const res = await axios.get("http://localhost:5000/santos"),
-            json = await res.data
+        const res = await axios.get("http://localhost:5000/santos")
+        console.log(res)
+           const  json =  res.data
         setDb(json)
     }
+
     useEffect(() => {
         setLoading(true);
         getData()
@@ -51,9 +53,9 @@ const CrudApp = () => {
 
 
 
-    const deleteData = async (id) => {
+    const deleteData = async (id,name) => {
         let isDelete = window.confirm(
-            `Estás seguro que deseas eliminar el registro "${id}"?`
+            `Estás seguro que deseas eliminar el registro "${name}"?`
         );
 
         if (isDelete) {

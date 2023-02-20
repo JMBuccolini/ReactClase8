@@ -1,34 +1,14 @@
 {
   "santos": [
     {
-      "name": "Luke",
+      "name": "Luke ",
+      "constellation": "Lolo",
+      "id": 1676935267544
+    },
+    {
+      "name": "Anakin",
       "constellation": "Skywalker",
-      "id": 1676927166342
-    },
-    {
-      "name": "Ben",
-      "constellation": "Solo",
-      "id": 1676927170790
-    },
-    {
-      "name": "Leia",
-      "constellation": "Organa",
-      "id": 1676927175600
-    },
-    {
-      "name": "Darth ",
-      "constellation": "Maul",
-      "id": 1676927224637
-    },
-    {
-      "name": "Jar-Jar",
-      "constellation": "Binks",
-      "id": 1676928127586
-    },
-    {
-      "name": "Padme",
-      "constellation": "Amidala",
-      "id": 1676928148253
+      "id": 1676935274026
     }
   ]
 }
