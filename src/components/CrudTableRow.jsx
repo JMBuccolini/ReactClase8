@@ -2,18 +2,18 @@
 
 
 
-const CrudTableRow = ({ caballero, setDataToEdit, deleteData }) => {
+const CrudTableRow = ({ personaje, setDataToEdit, deleteData }) => {
 
-    let { name, constellation, id } = caballero;
+    let { name, lastname, id } = personaje;
 
 
 
     return (
         <tr>
             <td>{name}</td>
-            <td>{constellation}</td>
+            <td>{lastname}</td>
             <td>
-                <button onClick={() => setDataToEdit(caballero)}>Editar</button>
+                <button onClick={() => setDataToEdit(personaje)}>Editar</button>
                 <button onClick={() => deleteData(id,name)}>Eliminar</button>
             </td>
         </tr>

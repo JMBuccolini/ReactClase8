@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 
 const initialForm = {
     name: "",
-    constellation: "",
+    lastname: "",
     id: null
 }
 
@@ -20,7 +20,7 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!form.name || !form.constellation) {
+        if (!form.name || !form.lastname) {
             alert("Datos incompletos");
             return;
         }
@@ -53,8 +53,8 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
             <h3>{dataToEdit ? "Editar" : "Agregar"}</h3>
             <form onSubmit={handleSubmit}>
                 <input type="text" name="name" placeholder="Nombre" onChange={handleChange} value={form.name} />
-                <input type="text" name="constellation" placeholder="Lastname"
-                    onChange={handleChange} value={form.constellation}
+                <input type="text" name="lastname" placeholder="Lastname"
+                    onChange={handleChange} value={form.lastname}
                 />
                 <input type="submit" value="Enviar" />
                 <input type="reset" value="Limpiar" onClick={handleReset} />

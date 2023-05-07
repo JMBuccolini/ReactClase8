@@ -13,7 +13,7 @@ const CrudApp = () => {
 
 
     const getData = async () => {
-        const res = await axios.get("http://localhost:5000/santos")
+        const res = await axios.get("http://localhost:5000/personajes")
         console.log(res)
            const  json =  res.data
         setDb(json)
@@ -32,14 +32,14 @@ const CrudApp = () => {
     const createData = async (data) => {
         data.id = Date.now();
 
-        await axios.post("http://localhost:5000/santos",data)
+        await axios.post("http://localhost:5000/personajes",data)
 
         getData()
     };
 
 
     const updateData = async (data) => {
-        let endpoint = `http://localhost:5000/santos/${data.id}`;
+        let endpoint = `http://localhost:5000/personajes/${data.id}`;
 
         let options = {
             method: "PUT",
@@ -59,7 +59,7 @@ const CrudApp = () => {
         );
 
         if (isDelete) {
-            let endpoint = `http://localhost:5000/santos/${id}`;
+            let endpoint = `http://localhost:5000/personajes/${id}`;
 
             let options = {
                 method: "DELETE",

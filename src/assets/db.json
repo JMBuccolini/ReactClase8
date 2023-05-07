@@ -1,14 +1,14 @@
 {
-  "santos": [
+  "personajes": [
     {
       "name": "Luke ",
-      "constellation": "Lolo",
+      "lastname": "Skywalker",
       "id": 1676935267544
     },
     {
-      "name": "Anakin",
-      "constellation": "Skywalker",
-      "id": 1676935274026
+      "name": "Padme",
+      "lastname": "Amidala",
+      "id": 1683460832683
     }
   ]
 }
